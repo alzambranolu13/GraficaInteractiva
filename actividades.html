@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- documento de ejemplo de uso de estilos para alterar la presentación de un documento html 
+- realizado por el profesor Carlos Delgado para el curso Gráfica interactiva de la Universidad Nacional de Colombia-->
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Importacion de font 'Lato' desde la api de google'-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet"> <!-- Importacion de font 'Roboto Slab' desde la api de google'-->
+        <link type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700' />
+        <meta charset="UTF-8">
+        <meta lang="es">
+        <title>con estilos</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
+        </head>
+
+<body>
+    <div class="bg">
+        <h1 style="font-family: 'Roboto Slab'" > <a class="link" href="index.html"> Cincinnati Zoo & Botanical Garden </a></h1>
+        <nav class="menunav"> <!-- asigna el estilo "menunav" al menu -->
+            <a class="botonMenu" href="ubicacion.html" target="_self">Ubicacion</a><!-- asigna el estilo "botonMenu" a cada botón -->
+            <a class="botonMenu" href="personajes.html" target="_self">Personajes</a>
+            <a class="botonMenu" href="actividades.html" target="_self">Actividades</a>
+            <a class="botonMenu" href="historia.html" target="_self">Historia</a>
+            <a class="botonMenu" href="creditos.html" target="_self">Creditos</a>
+
+        </nav> 
+    <div class="contenido">
+            <h2>Itinerario</h2>
+            <table class="content-table"> <!-- Se crea una tabla para mostrar itinerario del dia-->
+                <thead>
+                    <tr> <!-- se define el header como el dia del itinerario-->
+                        <th>Viernes, Abril 8</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="active-row"> <!-- se añade por fila la hora y cada actividad toma una columna -->
+                        <td>9:30 am</td>
+                        <td>Goat Yard Open</td>
+                        <td>Close up animal encounter</td>
+                        <td>Girafee feeding</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>11:00 am</td>
+                        <td>Blakely's Animal Bonanza</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>12:00 pm</td>
+                        <td>Cheetah Encounter</td>
+                        <td>Giraffe Chat</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>12:30 pm</td>
+                        <td>Girafee feeding</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>2:00 pm</td>
+                        <td>Blakely's Animal Bonanza</td>
+                        <td>Elephant chat</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>2:45 pm</td>
+                        <td>African Penguin Chat</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>3:00 pm</td>
+                        <td>Hippo Chat</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <div class="alert"> <!-- Se añade un recordatorio  -->
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <strong>Recordatorio</strong> ¡Son las vacaciones de primavera! Las vacaciones de primavera pueden significar más visitantes del zoológico de lo habitual entre semana en marzo y abril.
+            </div>
+             
+                
+  
+
+
+    </div>
+    </div>
+
+
+</body>
+</html>

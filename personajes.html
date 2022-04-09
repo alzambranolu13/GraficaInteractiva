@@ -1,0 +1,68 @@
+<!doctype html>
+<!-- documento de ejemplo de uso de estilos para alterar la presentación de un documento html 
+- realizado por el profesor Carlos Delgado para el curso Gráfica interactiva de la Universidad Nacional de Colombia-->
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700' />
+    <meta charset="UTF-8">
+    <meta lang="es">
+    <title>con estilos</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
+</head>
+
+<body>
+    <div class="bg">
+        <h1 style="font-family: 'Roboto Slab'" > <a class="link" href="index.html"> Cincinnati Zoo & Botanical Garden </a></h1>
+        <nav class="menunav">
+            <!-- asigna el estilo "menunav" al menu -->
+            <a class="botonMenu" href="ubicacion.html" target="_self">Ubicacion</a>
+            <a class="botonMenu" href="personajes.html" target="_self">Personajes</a>           
+            <a class="botonMenu" href="actividades.html" target="_self">Actividades</a>
+            <a class="botonMenu" href="historia.html" target="_self">Historia</a>
+            <a class="botonMenu" href="creditos.html" target="_self">Creditos</a>
+        </nav>
+        <div class="contenido">
+            <h2>Animales</h2>
+            <p class="uno">
+                En este Zoológico podemos encontrar toda clase de animales y plantas 
+            </p>
+            <h3> Animales Nocturnos</h3>
+            <div class="uno">
+ 
+                <div class="card" > <!-- Se crea un div para añadir las imagenes de los animales, este incluye la imagen arriba y la de abajo -->
+                <img class="tres" src="imagenes/buho.jpg" width="200px" heigth="100px" alt="Card Back"/>
+                <img  src="imagenes/nocturno2.jpg" width="200px" heigth="100px" class="img-top" alt="Card Front"/>          
+                </div>
+                Inaugurado en mayo de 2011, "Cazadores Nocturnos" es un área que alberga una gran mayoría de los animales nocturnos, como búho real, cerdo hormiguero, murciélagos vampiro, pitón de Birmania, fénec y fosa, pero también casas de varias especies de gato salvaje, como manules, ocelotes, pantera nebulosa, gato pescador, gato de las arenas y caracales.
+                
+            </div>
+            <h3> Felinos</h3>
+            <div class="uno">
+                <div style="float: right ;margin-left:20px" class="card">
+                <img style="float: right" class="tres" src="imagenes/tigre1.jpg" width="200px" heigth="100px" alt="Card Back"/>
+                <img  src="imagenes/tigre2.jpg" width="200px" heigth="100px" class="img-top" alt="Card Front"/>          
+                </div>
+                Inaugurado en el verano de 2012, el "Cañón de los Felinos" es un área que muestra la mayoría de las especies del zoo de grandes felinos, incluyendo leopardo de las nieves, puma, tigre malayo y tigre de Bengala blanco.
+            </div>
+            <h3> Aves</h3>
+            <div sty class="uno">
+                
+                
+                <div class="card">
+                <img class="tres" src="imagenes/ave1.jpg" width="200px" heigth="100px" alt="Card Back"/>
+                <img  src="imagenes/ave2.jpg" width="200px" heigth="100px" class="img-top" alt="Card Front"/>          
+                </div>
+                Un recorrido aviario que permite a los visitantes interactuar con Lori arcoiris. Los visitantes también pueden comprar palos con semillas y tazas de néctar para alimentar a los loros. ganso urraco, tardo canelo, Kea, Lori de cabeza negra y gansos del Cabo Barren que viven en la pajarera.
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
